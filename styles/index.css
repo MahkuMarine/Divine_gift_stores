@@ -149,6 +149,23 @@ section#top div.adtop {
     justify-content: space-between;
 }
 
+.nav-container #menu ul > .socials {
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container #menu ul > .socials a {
+    padding: 0 1.3rem;
+    font-size: 20px;
+    color: inherit;
+}
+
 /* SHOW NAV WHEN CHECKBOX IS CHECKED */
 .nav-container .checkbox:checked~#menu ul {
     left: 0;
