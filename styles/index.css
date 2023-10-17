@@ -247,3 +247,101 @@ section#products_main .bestsellers h2 {
     letter-spacing: 1.2px;
     margin: 3.7rem 0;
 }
+
+/* ///////////////////// footer style ////////////////// */
+
+#footer{
+    margin-top: 1rem;
+    background-color: black;
+    padding: 3.5rem 2rem;
+}
+.sub-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+}
+#footer .content ul{
+    color: white;
+    font-size: 1.3rem;
+    list-style: none;
+   
+       
+}
+#footer .content a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+}
+#footer .mission{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    }
+#footer .mission-content{
+    color: white;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.taste{
+           display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.taste a{
+    border: 1px solid white;
+    padding: .5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.last_footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 6rem;
+}
+.bit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.bit span{
+    font-size: 2rem;
+    color: white;
+}
+.newspapper form{
+    width: 400px;
+    background-color: black;
+       }
+       .newspapper form input {
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        width: 400px;
+        padding: 15px 7px;
+       }
+       .newspapper form input:focus{
+        
+        color: orange;
+        background-color: black;
+       }
+       .footer_social{
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+       .footer_social i{
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+       }
