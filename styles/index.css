@@ -20,7 +20,7 @@ section#top div.adtop {
     color: #fff;
     text-align: center;
     padding: .7rem 1.2rem;
-}
+  }
 
 /* RESIZE ALL IMAGES TO DEFAULT 100% */
 img {
@@ -132,11 +132,12 @@ img {
     display: block;
     list-style-type: none;
     background-color: #fff;
-    width: 88%;
-    height: 100vh;
+    width: 50%;
+    height: 120vh;
     position: absolute;
     top: 70px;
-    left: -550px;
+    left: -5550px;
+    /* left: -550px; */
     transition: .2s ease-out;
     padding: 5rem .7rem;
 }
@@ -204,7 +205,7 @@ section#products_main {
 
 .desc {
     text-align: center;
-    margin: 16px 0;
+    margin: 15px 0;
 }
 
 section#products_main .yoghurts{
@@ -213,7 +214,8 @@ section#products_main .yoghurts{
 
 section#products_main .yoghurts .yogh_image {
     border-bottom: 3px solid;
-    height: 430px;
+    height: 300px;
+    object-fit: cover;
     overflow: hidden;
 }
 
