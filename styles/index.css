@@ -129,16 +129,21 @@ img {
 
 /*STYLE THE MENU */
 .nav-container #menu ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     list-style-type: none;
     background-color: #fff;
-    width: 88%;
+    width: 90%;
     height: 100vh;
     position: absolute;
     top: 70px;
     left: -550px;
     transition: .2s ease-out;
-    padding: 5rem .7rem;
+}
+
+.nav-container #menu ul .main_nav {
+    padding: 5rem .7rem 0;
 }
 
 .nav-container #menu li {
@@ -156,9 +161,6 @@ img {
 
 .nav-container #menu ul > .socials {
     background-color: whitesmoke;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     height: 15vh;
     width: 100%;
     display: flex;
@@ -198,13 +200,8 @@ img {
 
 /* STYLE PRODUCTS SECTION */
 section#products_main {
-    margin-top: 72px;
-    padding: 1rem;
-}
-
-.desc {
-    text-align: center;
-    margin: 16px 0;
+    margin-top: 80px;
+    padding: 0 16px;
 }
 
 section#products_main .yoghurts{
@@ -217,17 +214,23 @@ section#products_main .yoghurts .yogh_image {
     overflow: hidden;
 }
 
+.desc {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+
 section#products_main .yoghurts h2 {
-    font-size: 3.9rem;
-    padding: 2.4rem 0;
+    font-size: 3rem;
+    padding: 3rem 0 2rem;
+    font-family: 'Avenir Next', sans-serif;
 }
 
 section#products_main .yoghurts p {
-    width: 67%;
     line-height: 1.8;
-    letter-spacing: .4px;
-    margin: -12px auto 18px;
-    font-weight: lighter;
+    letter-spacing: 1.8px;
+    color: #474444;
+    font-family: 'anonymous pro';
 }
 
 section#products_main .yoghurts button {
@@ -236,12 +239,30 @@ section#products_main .yoghurts button {
     outline: none;
     color: #fff;
     padding: 16px 32px;
-    margin: 8px 0 30px;
+    margin: 2.2rem 0 3rem;
     font-size: 16px;
+    font-family: 'anonymous pro';
+}
+
+section#products_main .bestsellers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#products_main .bestsellers .best_prod{
+    width: 50%;
 }
 
 section#products_main .bestsellers h2 {
     font-size: 24px;
     letter-spacing: 1.2px;
-    margin: 3.7rem 0;
+    margin: 3.7rem 0 0;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    section#products_main .bestsellers .best_prod{
+        width: 25%;
+    }
 }
