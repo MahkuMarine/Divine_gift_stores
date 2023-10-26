@@ -13,3 +13,86 @@
     left: -5550px;
 }
 }
+
+
+
+
+
+@media (max-width:600px){
+   *{
+      margin: 0 !important;
+   }
+   .taste{
+justify-content: start;
+
+}
+
+.last_footer{
+      flex-direction: column;
+   margin: 0;
+}
+.bit span{
+   font-size: 1.2rem;
+   color: white;
+}
+.newspapper form{
+   width: 200px;
+   max-width: 100%;
+   background-color: black;
+      }
+      .newspapper form input {
+       background-color: black;
+       color: white;
+       border: none;
+       outline: none;
+       width: 170px;
+       padding: 10px 5px;
+      }
+      .newspapper form input:focus{
+       
+       color: orange;
+       background-color: black;
+      }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px) {
+ .desc h1{
+    font-size: 1.5rem;
+ }
+ .best_prod{
+    max-width: 100%;
+    width: 100%;
+    transition: all .5s ease-in;
+    border: .5px solid gray;
+ margin: 0;
+         }
+ .best_prod img{
+    max-width: 100%;
+    width: 100%;
+     height: 300px;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    
+ }
+ .best_prod:hover{
+    box-shadow: 2px 2px 5px black;
+ border: none;
+   }
+ .best_prod .straw50cl{
+    font-size: 1.3rem;
+ }
+
+}

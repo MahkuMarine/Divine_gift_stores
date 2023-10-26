@@ -318,6 +318,7 @@ section#products_main .bestsellers h2 {
 }
 .newspapper form{
     width: 400px;
+    max-width: 100%;
     background-color: black;
        }
        .newspapper form input {
