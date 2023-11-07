@@ -75,8 +75,8 @@ justify-content: start;
     max-width: 100%;
     width: 100%;
     transition: all .5s ease-in;
-    border: .5px solid gray;
- margin: 0;
+    transform: scale(0.9);
+  margin: 0;
          }
  .best_prod img{
     max-width: 100%;
@@ -85,11 +85,12 @@ justify-content: start;
     max-height: 100%;
     object-fit: contain;
     object-position: center;
-    
- }
+   position: relative;
+     }
+
  .best_prod:hover{
-    box-shadow: 2px 2px 5px black;
- border: none;
+    box-shadow: 2px 2px 3px black;
+    transform: scale(0.91);
    }
  .best_prod .straw50cl{
     font-size: 1.3rem;

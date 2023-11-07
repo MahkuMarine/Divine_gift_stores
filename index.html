@@ -140,6 +140,42 @@
 </div>
 </div>
 </section>
+
+<!-- ---------------------------- cart section starts------------------------------- -->
+<section class="container-fluid">
+    <div class="row justify-content-center align-items-center g-2">
+        <div class="cart-image col-xs-12 col-sm-6 col-dm-6 col-xl-6">
+            <div class="cart-image-section">
+                <img src="./images/yoghurt/glass_yoghurt.png" alt="">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-dm-6 col-xl-6">
+            <div class="cart-content">
+                <h1> Fiery Ginger Booster</h1>
+                <p>Regular price : $3.95 CAD</p>
+                <div class="buttons">
+                    <button type="button" class="blk-btn btn" >60 ml</button>
+                    <button type="button" class="wht-btn btn">Six Pack </button>
+                    <button type="button" class="wht-btn btn">Twelve Pack </button>
+                </div>
+                              <!--  -->
+              <div class="cart-button">
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input id="quantity__input"  type="number" min="0" max="100" step="5" value="2" >
+                <button id="increment" onclick="stepper(this)"> + </button>
+              </div>
+              <div class="last_cart_button">
+                <button type="button" class="cart btns">Add to cart</button>
+                <button type="button" class="buy_now btns">Buy it now</button>
+                <a href="#"> View full details <span>&rarr;</span></a>
+            </div>
+           
+            </div>
+        </div>
+          </div>
+</section>
+
+<!-- ---------------------------- cart section ends------------------------------- -->
 <section id="footer" class="container-fluid">
 <div class=" row sub-footer ">
 <div class="col-xs-12 col-sm-4 col-dm-6  col-xl-4">
@@ -183,6 +219,7 @@
 </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./styles/index.js"></script>
 </body>
 
 </html>
