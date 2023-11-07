@@ -68,6 +68,31 @@ justify-content: start;
 
 
 @media (min-width:992px) {
+/* navbar  */
+/* MAKE THE NAV CONTAINER RELATIVE POSITION */
+.nav-container {
+   display: flex;
+   position: relative;
+   font-family: "Anonymous Pro", sans-serif;
+   color: #000;
+}
+.nav-container .hamburger{
+display: none;
+}
+.nav-container #menu ul {
+   display: flex;
+      width: 0;
+      height: auto;
+     position: absolute;
+   top: -70px;
+   left: 0;
+ 
+}
+
+.nav-container #menu ul > .socials {
+ display: none;
+}
+
  .desc h1{
     font-size: 1.5rem;
  }
