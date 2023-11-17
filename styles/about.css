@@ -269,6 +269,7 @@ img {
     background-color: #fff;
     text-align: center;
     padding: 25px 15px; 
+    
 }
 
 .secrole{
@@ -708,14 +709,19 @@ img {
 @media screen and (max-width: 636px) {
     .firstimg{
         height: 25vh;
+        /* outline: auto; */
     }
     .firstimg img{
         height: 45vh;
     }
 
-    .contents{
-        width: 90%;
-        padding: 10px 5px; 
+    .firstimg .contents{
+        position: absolute;
+        padding: 10px 5px;
+        width: 70%; 
+    }
+    .firstimg .contents p{
+        font-size: 9;
     }
     .services-list{
         flex-direction: column;
@@ -745,12 +751,16 @@ img {
         height: 356px;
         width: 520px;
     }
+    .last-card .card .text{
+        /* outline: auto; */
+        width: 80vw;
+        margin: 10%;
+
+    }
     .last-card .card h2 {
-        text-align: center;
         padding: 20px 35px;
     }
     .last-card .card p{
-        text-align: center;
         padding: 5px 75px;
     
     }
@@ -775,7 +785,48 @@ img {
     }
     .copyright p{
         font-size: 10px;
-    }
+    }   
+}
 
+@media screen and (max-width: 460px) {
+    .service h2{
+        font-size: 18px;
+    }
+    .services-list .card{
+        /* outline: auto; */
+        height: 300px;
+        width: 300px;
+        padding: 20px 15px;
+
+    }
+    .services-list .card h2 {
+        font-size: 20px;
+    }
+    .services-list .card p {
+        font-size: 13px;
+    }
+    .services-list .card img{
+        width: 40%;
+    }
+    .firstimg .contents{
+        width: 90%; 
+    }
+    .last-card .card{
+    padding: 20px 55px;
+    }
+    .last-card .card .text{
+        /* outline: auto; */
+        width: 80vw;
+        margin: 10%;
+
+    }
+    .last-card .card h2 {
+        font-size: 23px;
+        padding: 20px 45px;
+    }
+    .last-card .card p{
+        font-size: 12px;
+        padding: 5px 55px;
     
+    }
 }

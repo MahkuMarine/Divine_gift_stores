@@ -10,7 +10,7 @@
         display: block;
         list-style-type: none;
         background-color: #fff;
-        width: 88%;
+        width: 58%;
         height: 100vh;
         position: absolute;
         top: 70px;
@@ -23,9 +23,10 @@
         justify-content: center;
     }
         section#products_main .yoghurts .yogh_image img {
-        height: 500px;
-        width: 650px;
+        height: 700px;
+        width: 550px;
         transition: 0.5s ease; 
+        /* outline: auto; */
     }
     section#products_main .yoghurts .yogh_image img:hover{
         transform: scale(1.1);
@@ -51,10 +52,10 @@
 
     }
     section#products_main .bestsellers .row .best_prod .img img{
-       max-width: 100%;
-       height: 500px;
+       /* max-width: 100%; */
+       /* height: 500px; */
        border-radius: 10%;
-       filter: drop-shadow(4px 2px 5px gray);
+       /* filter: drop-shadow(4px 2px 5px gray); */
        transition: 0.5s ease;
        /* cursor: pointer;  */
     }
@@ -90,8 +91,8 @@
     }
     section#products_main .bestsellers .row .ItemSpeech .imgg h3{
         position:absolute;
-        top: 35%;
-        left: 10%;
+        top: 40%;
+        left: 30%;
         text-align: center;
         text-shadow: 1px 1px 1px black;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -110,7 +111,7 @@
     section#products_main .bestsellers .flavours .colu-list{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         min-height: 400px;
     }
@@ -246,5 +247,146 @@
             padding-left: 20px;
             text-decoration: none;
         }
+        .copyright{
+            color: #fff;
+            border-top: 1px solid #fff;
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            background: #000000;
+            font-weight: 300;
+        }
+}
+@media screen and (max-width: 768px) {
+    .nav-container #menu ul > .socials a {
+        padding: 0 8px;
+    }
+    section#products_main .bestsellers .row .ItemSpeech .imgg h3{
+        top: 40%;
+        left: 20%;
+        font-size: 40px;
+    }
 
+
+
+    /* ///////////////////// footer style ////////////////// */
+
+    .sub-footer{
+        align-items: start;
+    }
+    #footer .logo{
+        font-size: 1.5rem;     
+    }
+    #footer .content ul{
+        font-size: 1rem;
+    }
+    #footer .mission{
+        font-size: 1.5rem;
+        
+    }
+    #footer .mission-content{
+        font-size: 1rem;
+        width: 50vw;
+    }
+    .taste{
+        display: flex;
+        justify-content: end;
+    }
+    .taste a{
+        font-size: 1rem;
+    }
+    .newspapper h3{
+        font-size: 1rem;
+    }
+    .newspapper form input {
+        padding: 6px 7px;
+    }
+    .footer_social{
+        width: 200px;
+        display: flex;
+        /* outline: auto; */
+    }
+    .footer_social i{
+        font-size: 1.5rem; 
+    }
+    .copyright p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    section#products_main .bestsellers .row .ItemSpeech .imgg h3{
+        left: 10%;
+        font-size: 30px;
+    }
+    section#products_main .bestsellers .flavours .colu-list .card{
+        border-radius: 17px;
+        height: 256px;
+        width: 400px;
+        /* outline: auto; */
+    }
+    section#products_main .bestsellers .flavours .colu-list .card img{
+        width: 250px;
+        height: 200px;
+        filter: drop-shadow(-30px -15px 5px gray);
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    .nav-container #menu li a {
+        font-size: 12px;
+        justify-content: start;
+    }
+    .nav-container #menu li a i {
+        /* outline: auto; */
+        font-size: 12px;
+    }
+    .nav-container #menu ul > .socials {
+        flex-direction: column;
+    }
+    #footer .mission-content{
+        font-size: 1rem;
+        width: 70vw;
+        /* outline: auto; */
+    }
+    .newspapper{
+    display: inline-flex;
+    flex-direction: column;
+    /* outline: auto; */
+    }
+    .footer_social{
+        justify-content: end;
+        width: 100%;
+    }
+    .last_footer{
+        flex-direction: column;
+    }
+    .copyright p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-container #menu li a i {
+        /* outline: auto; */
+        font-size: 12px;
+        padding: 0%;
+    }
+    #footer .logo{
+        font-size: 1.2rem;
+     }
+     #footer .content ul{
+        font-size: 13px;
+    }
+    #footer .mission{
+        font-size: 1.2rem;
+    }
+    #footer .mission-content{
+        font-size: 13px;
+        width: 70vw;
+    }
+    .newspapper form{
+        width: 250px;
+    }
 }
