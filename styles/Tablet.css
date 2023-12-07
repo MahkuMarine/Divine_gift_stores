@@ -1,252 +1,36 @@
-@media screen and (max-width:1474px) {
-
-    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,700&display=swap');
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+@media screen and (max-width:1024px) {
+    section#products_main .bestsellers h2 {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin: 3rem 0;
     }
-
-    /* STYLE HEADINGS */
-    h1, h2, h3, h4, h5, .h5 {
-        font-family: "Avenir Next", sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-    }
-
-    /* STYLE TOP AD BANNER */
-    section#top div.adtop {
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        padding: .7rem 1.2rem;
-    }
-
-    /* RESIZE ALL IMAGES TO DEFAULT 100% */
-    img {
-        width: 100%;
-    }
-
-    /* OVERLAY TO MAKE PAGE INACTIVE WHEN MENU IS OUT */
-    .overlay {
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(0, 0, 0);
-        display: block;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        z-index: -1;
-        opacity: 0;
-        transition: .2s ease-out;
-    }
-
-    /* MAKE THE NAV CONTAINER RELATIVE POSITION */
-    .nav-container {
-        display: block;
-        position: relative;
-        font-family: "Anonymous Pro", sans-serif;
-        color: #000;
-    }
-
-    /* STYLE THE CHECKBOX */
-    .nav-container .checkbox {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        height: 22px;
-        width: 22px;
-        opacity: 0;
-        cursor: pointer;
-        z-index: 5;
-    }
-
-    /*STYLE THE HAMBURGER */
-    .nav-container .hamburger {
-        width: 27px;
-        height: 20px;
-        position: absolute;
-        top: 27px;
-        left: 18px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        outline: auto;
-    }
-
-    .nav-container .hamburger .line {
-        display: flex;
-        width: 100%;
-        height: 1.1px;
-        background: #000;
-    }
-
-    .nav-container .hamburger .line1 {
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-container .hamburger .line2 {
-        transition: transform 0.2s ease-in-out;
-    } 
-
-    .nav-container .hamburger .line3 {
-        transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
-    }
-
-
-    .nav-container .sec-nav {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-container .sec-nav a {
-        font-size: 20px;
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .nav-container .sec-nav .product {
-        display: flex;
-        justify-content: space-between;
-        width: 30%;
-    }
-
-    .nav-container .sec-nav h3 {
-        font-family: inherit;
-        border: 2px solid;
-        padding: .4rem 1.2rem;
-        font-size: 24px;
-        font-weight: 700;
-    }
-
-    /*STYLE THE MENU */
+/* } */
+/* @media screen and (max-width:768px) { */
     .nav-container #menu ul {
-        display: flex;
-        justify-content: start;
+        display: block;
         list-style-type: none;
         background-color: #fff;
-        width: 100%;
-        height: 5vh;
+        width: 58%;
+        height: 100vh;
         position: absolute;
         top: 70px;
-        left: -1550px;
-        /* left: -550px; */
+        left: -750px;
         transition: .2s ease-out;
-        padding: 1rem .7rem;
-        /* outline: auto; */
-
+        padding: 5rem .7rem;
     }
-
-    .nav-container #menu li {
-        padding: .5rem 1.2rem;
-        /* outline: auto; */
-    }
-    .nav-container #menu li a {
-        color: inherit;
-        text-decoration: none;
-        font-family: inherit;
-        font-size: large;
+    section#products_main .yoghurts .yogh_image{
         display: flex;
         justify-content: center;
+    }
+        section#products_main .yoghurts .yogh_image img {
+        height: 700px;
+        width: 550px;
+        transition: 0.5s ease; 
         /* outline: auto; */
     }
-    .nav-container #menu li a i {
-        /* outline: auto; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    section#products_main .yoghurts .yogh_image img:hover{
+        transform: scale(1.1);
     }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        /* outline: auto; */
-    }
-    
-    .dropdown-content a:hover {background-color: #f1f1f1}
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-
-    .nav-container #menu ul > .socials {
-        background-color: whitesmoke;
-        position: absolute;
-        top: 0%;
-        left: 75%;
-        height: 5vh;
-        width: 20%;
-        display: flex;
-        align-items: center;
-        /* outline: auto; */
-
-    }
-
-    .nav-container #menu ul > .socials a {
-        padding: 0 1.3rem;
-        font-size: 20px;
-        color: inherit;
-        /* outline: auto; */
-    }
-
-    /* SHOW NAV WHEN CHECKBOX IS CHECKED */
-    .nav-container .checkbox:checked~#menu ul {
-        left: 0;
-        z-index: .999;
-    }
-
-    /* APPLY OVERLAY ON PAGE WHEN CHECKBOX IS CHECKED */
-    .nav-container .checkbox:checked~.overlay {
-        opacity: .4;
-    }
-
-    /* CHANGE THE HAMBURGER TO AN X WHEN CHECKBOX IS CHECKED */
-    .nav-container .checkbox:checked+.hamburger .line1 {
-        transform: rotate(45deg);
-    }
-
-
-    .nav-container .checkbox:checked+.hamburger .line2 {
-        transform: scaleY(0);
-    }
-
-    .nav-container .checkbox:checked+.hamburger .line3 {
-        transform: rotate(-45deg);
-    }
-
-        /* STYLE PRODUCTS SECTION */
-    section#products_main {
-        margin-top: 10%;
-        padding: 1rem;
-        /* outline: auto; */
-    }
-    
     section#products_main .bestsellers h2{
         font-size: 25px;
     }
@@ -472,7 +256,137 @@
             background: #000000;
             font-weight: 300;
         }
+}
+@media screen and (max-width: 768px) {
+    .nav-container #menu ul > .socials a {
+        padding: 0 8px;
+    }
+    section#products_main .bestsellers .row .ItemSpeech .imgg h3{
+        top: 40%;
+        left: 20%;
+        font-size: 40px;
+    }
 
 
 
+    /* ///////////////////// footer style ////////////////// */
+
+    .sub-footer{
+        align-items: start;
+    }
+    #footer .logo{
+        font-size: 1.5rem;     
+    }
+    #footer .content ul{
+        font-size: 1rem;
+    }
+    #footer .mission{
+        font-size: 1.5rem;
+        
+    }
+    #footer .mission-content{
+        font-size: 1rem;
+        width: 50vw;
+    }
+    .taste{
+        display: flex;
+        justify-content: end;
+    }
+    .taste a{
+        font-size: 1rem;
+    }
+    .newspapper h3{
+        font-size: 1rem;
+    }
+    .newspapper form input {
+        padding: 6px 7px;
+    }
+    .footer_social{
+        width: 200px;
+        display: flex;
+        /* outline: auto; */
+    }
+    .footer_social i{
+        font-size: 1.5rem; 
+    }
+    .copyright p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    section#products_main .bestsellers .row .ItemSpeech .imgg h3{
+        left: 10%;
+        font-size: 30px;
+    }
+    section#products_main .bestsellers .flavours .colu-list .card{
+        border-radius: 17px;
+        height: 256px;
+        width: 400px;
+        /* outline: auto; */
+    }
+    section#products_main .bestsellers .flavours .colu-list .card img{
+        width: 250px;
+        height: 200px;
+        filter: drop-shadow(-30px -15px 5px gray);
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    .nav-container #menu li a {
+        font-size: 12px;
+        justify-content: start;
+    }
+    .nav-container #menu li a i {
+        /* outline: auto; */
+        font-size: 12px;
+    }
+    .nav-container #menu ul > .socials {
+        flex-direction: column;
+    }
+    #footer .mission-content{
+        font-size: 1rem;
+        width: 70vw;
+        /* outline: auto; */
+    }
+    .newspapper{
+    display: inline-flex;
+    flex-direction: column;
+    /* outline: auto; */
+    }
+    .footer_social{
+        justify-content: end;
+        width: 100%;
+    }
+    .last_footer{
+        flex-direction: column;
+    }
+    .copyright p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-container #menu li a i {
+        /* outline: auto; */
+        font-size: 12px;
+        padding: 0%;
+    }
+    #footer .logo{
+        font-size: 1.2rem;
+     }
+     #footer .content ul{
+        font-size: 13px;
+    }
+    #footer .mission{
+        font-size: 1.2rem;
+    }
+    #footer .mission-content{
+        font-size: 13px;
+        width: 70vw;
+    }
+    .newspapper form{
+        width: 250px;
+    }
 }
