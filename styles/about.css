@@ -72,6 +72,9 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* outline: auto; */
+    visibility: visible;
+    
 }
 
 .nav-container .hamburger .line {

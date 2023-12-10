@@ -1,12 +1,25 @@
 /* ----------------------------------- carts section ------------------------------ */
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.row1{
+    width: 80%;
+    /* outline: auto; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .cart-image{
-    width: 100%;
+    width: 60%;
     max-width: 100%;
-            }
+}
    
    .cart-image-section img{
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     max-height: 500px;
     object-fit: cover;
     object-position: center;
@@ -15,11 +28,11 @@
    .cart-content{
     width: 90%;
     max-height: 100%;
-         display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-            margin-left: 2rem;            
+    margin-left: 2rem;            
    }
 
    .cart-content h1{
@@ -40,11 +53,14 @@
     padding: 15px 25px;
     border-radius: 50px;
     background-color: white;
- border: 1px solid rgba(0, 0, 0, 0.61);
- margin-bottom: 2rem;
-       }
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    margin-bottom: 2rem;
+    transition: .3s;
+    }
    .cart-content .buttons .btn:hover{
     border: 1px solid black;
+    background: rgba(177, 169, 169, 0.274);
+    transition: 2s;
    }
    .buttons .btn:focus{
     background-color: #000 !important;
@@ -65,6 +81,8 @@
     border: none;
     background-color: rgba(128, 128, 128, 0.438);
     color: black;
+    /* outline: auto; */
+    width: 250px;
    }
    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
     -webkit-appearance: none;
@@ -86,41 +104,79 @@
     border-radius: 0 45px 45px 0;
     
    }
-.last_cart_button{
-display: flex;
+    .last_cart_button{
+    display: flex;
     flex-direction: column;
     width: 70%;
-        }
-        .last_cart_button .btns{
-padding: 15px 13px;
-margin-bottom: .5rem;
-background-color: white;
-        }
-        .last_cart_button .cart:hover{
-border: 2px solid black;
-box-shadow: 1px 1px 2px black;
-        }
-        .last_cart_button .buy_now{
-           background-color: black;
-           color: white;
-            box-shadow: 1px 1px 2px black;
-            box-shadow: none;
-            border: none;
-            transition: all .5s ease-in;
-                        }
-                        .last_cart_button .buy_now:hover{
-                            transform: scale(1.01);
-                            
-                        }
-                        .last_cart_button a{
-                            text-decoration: none;
-                            color: #000;
-                            transition: all .5s;
-                        }
-                        .last_cart_button a:hover{
-                          transform: scaleX(1.03);
-                          text-decoration: underline;
-                          color: #000;
-                          margin-left: 10px;
-                          
-                        }
+    }
+    .last_cart_button .btns{
+    padding: 15px 13px;
+    margin-bottom: .5rem;
+    background-color: white;
+    }
+    .last_cart_button .cart:hover{
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 1px black;
+    }
+    .last_cart_button .buy_now{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    /* box-shadow: none; */
+    border: none;
+    transition: all .5s ease-in;
+    }
+    .last_cart_button .buy_now:hover{
+    transform: scale(1.01);
+
+    }
+    .last_cart_button a{
+    text-decoration: none;
+    color: #000;
+    transition: all .5s;
+    }
+    .last_cart_button a:hover{
+    transform: scaleX(1.03);
+    text-decoration: underline;
+    color: #000;
+    margin-left: 10px;
+
+    }
+
+
+@media screen and (max-width:986px) {
+    .row1{
+        width: 80%;
+        outline: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart-image{
+        width: 100vw;
+        /* position: relative;
+        left: -10%; */
+        display: flex;
+        justify-content: center;
+        /* max-width: 100%; */
+        outline: auto;
+    }
+    .prices{
+        display: flex;
+        justify-content: center;
+        outline: auto;
+        width: 100vw ;
+    }
+    .cart-content{
+        /* position: relative;
+        left: -10%; */
+        width: 90vw;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: left;
+        margin-left: 2rem;            
+       }
+}

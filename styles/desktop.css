@@ -7,7 +7,9 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+    body{
+        background-color: whitesmoke;
+    }
     /* STYLE HEADINGS */
     h1, h2, h3, h4, h5, .h5 {
         font-family: "Avenir Next", sans-serif;
@@ -74,7 +76,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        outline: auto;
+        /* outline: auto; */
+        visibility: hidden;
+
     }
 
     .nav-container .hamburger .line {
@@ -107,6 +111,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* outline: auto; */
     }
 
     .nav-container .sec-nav a {
@@ -135,11 +140,12 @@
         justify-content: start;
         list-style-type: none;
         background-color: #fff;
+        /* background-color: whitesmoke; */
         width: 100%;
         height: 5vh;
         position: absolute;
-        top: 70px;
-        left: -1550px;
+        top: 110px;
+        left: 0px;
         /* left: -550px; */
         transition: .2s ease-out;
         padding: 1rem .7rem;
@@ -148,7 +154,7 @@
     }
 
     .nav-container #menu li {
-        padding: .5rem 1.2rem;
+        padding: .2rem 1.2rem;
         /* outline: auto; */
     }
     .nav-container #menu li a {
@@ -196,7 +202,8 @@
     
 
     .nav-container #menu ul > .socials {
-        background-color: whitesmoke;
+        /* background-color: whitesmoke; */
+        background-color: #fff;
         position: absolute;
         top: 0%;
         left: 75%;
@@ -246,13 +253,35 @@
         padding: 1rem;
         /* outline: auto; */
     }
+    section#products_main .yoghurts .yogh_image{
+        display: flex;
+        justify-content: center;
+        /* height: 0%; */
+        /* outline: auto; */
+    }
+        section#products_main .yoghurts .yogh_image img {
+        position: relative;
+        height: 900px;
+        /* width: 950px; */
+        transition: 0.5s ease;
+        top: -40%; 
+        z-index: 0;
+        /* outline: auto; */
+    }
+    section#products_main .yoghurts .yogh_image img:hover{
+        transform: scale(1.1);
+    }
     
     section#products_main .bestsellers h2{
-        font-size: 25px;
+        font-size: 45px;
+    }
+    section#products_main .yoghurts p {
+        font-size: 20px;
     }
     section#products_main .bestsellers .row .a, .b, .c, .d{
         /* outline: auto; */
         display: flex;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -326,7 +355,7 @@
     }
     section#products_main .bestsellers .flavours .colu-list{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         /* justify-content: space-between; */
         align-items: center;
         min-height: 400px;
@@ -355,7 +384,17 @@
     section#products_main .bestsellers .flavours .colu-list .card img:hover{
         transform: scale(1.1);
     }
-    section#products_main .bestsellers .flavours .colu-list h3, i{
+    section#products_main .bestsellers .flavours .lable{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* outline: auto; */
+    }
+    section#products_main .bestsellers .flavours .h3{
+        display: none;
+        /* outline: auto; */
+    }
+    section#products_main .bestsellers .flavours .lable h3, i{
         font-size: 20px;
         padding-left: 10px;
         cursor: pointer;
